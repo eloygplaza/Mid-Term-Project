@@ -241,3 +241,34 @@ html, body {
     justify-content: flex-start;
     flex: 1;
 }
+.projects-card-image {
+    width: 100%;
+    height: 240px;
+}
+.projects-content {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.projects-title {
+    margin: 30px 30px 20px;
+    color: #292e47;
+    font-size: 24px;
+    line-height: 115%;
+    font-weight: 500;
+}
+.projects-description {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.projects-link {
+    margin: 30px;
+    color: #072ac8;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
