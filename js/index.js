@@ -1,13 +1,13 @@
-async function fetchAllPokemon() {
-  let allPokemon;
+async function fetchProjects() {
+  let projects;
   const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151");
 
-  allPokemon = await res.json();
+  projects = await res.json();
 
   let container = document.querySelector(".is-danger");
 
   // iteramos por todos los pokemons
-  allPokemon["results"].forEach((element) => {
+  projects["results"].forEach((element) => {
     // id del pokemon
     let pokemonId = element.url.split("/")[6];
     // url de la imagen
@@ -31,4 +31,4 @@ async function fetchAllPokemon() {
 }
 
 // ejecutamos la funcion
-fetchAllPokemon();
+fetchProjects();

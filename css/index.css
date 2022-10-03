@@ -40,6 +40,7 @@ html, body {
 }
 .h2 {
     font-size: 50px;
+    color: var(--dark-grey);
 }
 .h3 {
     font-size: 40px;
@@ -105,13 +106,7 @@ html, body {
 }
 .container-navbar {
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
     background-color: var(--light-grey);
     color: var(--light-grey);
@@ -136,13 +131,7 @@ html, body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 .hero-content {
@@ -158,13 +147,7 @@ html, body {
 }   
 .hero-butons {
     display: block;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 .hero-text-button {
@@ -215,9 +198,7 @@ html, body {
     grid-auto-columns: 1fr;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: auto;
     grid-template-rows: auto;
 }
 .company-logo {
@@ -229,13 +210,7 @@ html, body {
     height: 96px;
     max-height: 96px;
     max-width: 150px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -243,4 +218,26 @@ html, body {
 .projects {
     margin-top: 200px;
     padding: 0px 30px;
+}
+.projects-wrapper {
+    margin-top: 70px;
+}
+.projects-list {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+.projects-item {
+    display: flex;
+    width: 340px;
+    height: 444px;
+    max-height: 444px;
+    max-width: 340px;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
 }
