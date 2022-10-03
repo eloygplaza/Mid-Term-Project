@@ -1,7 +1,7 @@
 {
     "projects": [
-      { "project-card-id": 1, "project-title": "Simplify", "project-description": "UI Design & App Development"},
-      { "project-card-id": 2, "project-title": "Dashcoin", "project-description": "Web Development"},
-      { "project-card-id": 3, "project-title": "Vectorify", "project-description": "User Experience Design"}
+      { "id": 1, "title": "Simplify", "description": "UI Design & App Development"},
+      { "id": 2, "title": "Dashcoin", "description": "Web Development"},
+      { "id": 3, "title": "Vectorify", "description": "User Experience Design"}
     ]
 }

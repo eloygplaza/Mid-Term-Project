@@ -1,17 +1,20 @@
 async function fetchProjects() {
   let projects;
-  const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151");
+  let container = document.querySelector(".projects-list");
+
+  const res = await fetch(
+    "https://my-json-server.typicode.com/eloygplaza/Mid-Term-Project/projects"
+  );
 
   projects = await res.json();
 
-  let container = document.querySelector(".is-danger");
-
-  // iteramos por todos los pokemons
-  projects["results"].forEach((element) => {
-    // id del pokemon
-    let pokemonId = element.url.split("/")[6];
-    // url de la imagen
-    let imagePath = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`;
+  // iteramos por todos los projects
+  projects.forEach((element) => {
+    let titleCard = element.project - title; // titulo card
+    let pathImageCard = `./projects-assets/projects-section/${
+      element.project - card - id
+    }.jpg`; // url de la imagen
+    let projectDescription = element.project - description; // descripcion card
 
     // creamos lo elementos a insertar en el html
     const block = document.createElement("a");
