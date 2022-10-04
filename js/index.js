@@ -38,6 +38,7 @@ async function fetchProjects() {
     divCardDescription.innerText = projectDescription;
     const linkProject = document.createElement("a");
     linkProject.classList.add("projects-link");
+    linkProject.href = "#";
     linkProject.innerText = "Learn More";
 
     // anexamos e insertamos en html
