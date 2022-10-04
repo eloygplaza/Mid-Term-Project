@@ -147,5 +147,47 @@
 
 /* Small devices (landscape phones, 412px and up) Galaxy Ultra S20 */
 @media (max-width: 412px) {
-
+    /* HERO */
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-card-main {
+        max-width: 390px;
+    }
+    /* COMPANIES */
+    .logos {
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+    /* TESTIMONIAL */
+    .emoji.bottom-left {
+        margin-left: 3%
+    }
+    .emoji.bottom-right {
+        margin-right: 3%;
+    }
+    /* SERVICES */
+    .services-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* EMAIL */
+    .textfield-wrapper {
+        margin-right: 0px;
+    }
+    .email-heading {
+        text-align: center;
+    }
+    .email-form {
+        flex-direction: column;
+    }
+    .btn-email {
+        margin-top: 10px;
+    }
+    /* FOOTER */
+    .footer-main {
+        display: flex;
+        flex-direction: column;
+    }
 }
