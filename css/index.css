@@ -54,7 +54,7 @@ html, body {
 .intro-t-r {
     font-size: 20px;
 }
-.head-t-r, .head-t-m {
+.head-t-r, .head-t-m, .email-subtitle {
     font-size: 17px;
 }
 .caption1-t-r {
@@ -458,7 +458,7 @@ html, body {
     margin-left: auto;
     background-color: var(--mid-yellow);
 }
-.container.container-cta {
+.container-email {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -472,4 +472,54 @@ html, body {
     margin-bottom: 20px;
     color: var(--dark-grey);
     margin-top: 40px;
+}
+.form-div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+}
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textfield-wrapper {
+    position: relative;
+    margin-right: 18px;
+}
+.textfield-icon {
+    position: absolute;
+    left: 8%;
+    top: 30%;
+    right: auto;
+    bottom: auto;
+    width: 30px;
+    height: 30px;
+    background-image: url("../project-assets/newsletter/icon/mail.svg");
+    background-position: 50% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.text-field {
+    width: 393px;
+    height: 80px;
+    margin-bottom: 0px;
+    padding-left: 70px;
+    background-color: var(--lighter-blue);
+    color: var(--dark-grey);
+    display: block;
+    font-size: 14px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border: 1px solid #cccccc;
+}
+.btn-email {
+    height: 84px;
+    margin-left: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
 }

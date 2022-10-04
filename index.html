@@ -132,9 +132,12 @@
         <h1 class="h3 email-heading">Do you have any questions?</h1>
         <div class="email-subtitle">Let us help you!</div>
         <div class="form-div">
-          <form id="email-form">
-            <div class="textfield-wrapper"></div>
-            <input type="submit" value="Suscribe" data-wait="Please wait..." method="get" class="primary-button g-button">
+          <form id="email-form" class="email-form">
+            <div class="textfield-wrapper">
+              <div class="textfield-icon"></div>
+              <input type="email" class="text-field" placeholder="Enter your email" id="email-input" value="" required>
+            </div>
+            <input type="submit" value="Suscribe" data-wait="Please wait..." method="POST" class="primary-button g-button btn-email" id="submit-btn">
           </form>
         </div>
       </div>

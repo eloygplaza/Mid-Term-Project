@@ -1,3 +1,4 @@
+// sync function to insert the projects sinide the Home Page
 async function fetchProjects() {
   let projects;
   let container = document.querySelector(".projects-list");
@@ -57,5 +58,17 @@ async function fetchProjects() {
   });
 }
 
-// ejecutamos la funcion
+// we execute the function
 fetchProjects();
+
+// we control when the buton submit is clicked by an eventListener and we show the value through console.log()
+let submitBtn = document.querySelector("#submit-btn");
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  let email = document.querySelector("#email-input").value;
+  if (email.length > 0) {
+    console.log(email);
+  } else {
+    console.log("Empty");
+  }
+});
