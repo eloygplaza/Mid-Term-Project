@@ -67,6 +67,7 @@ submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   let email = document.querySelector("#email-input").value;
   if (email.length > 0) {
+    // Bonus - we could add some fieworks when we reicive the correct email address :D
     console.log(email);
   } else {
     console.log("Empty");
