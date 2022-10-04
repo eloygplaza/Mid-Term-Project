@@ -1,0 +1,25 @@
+/* COMPANIES */
+.companies {
+    margin-top: 0px;
+    padding: 0px 30px;
+}
+.container-logos {
+    margin-top: 130px;
+}
+.logos {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.company-logo {
+    display: flex;
+    width: 150px;
+    height: 96px;
+    max-height: 96px;
+    max-width: 150px;
+    justify-content: center;
+    align-items: center;
+}
