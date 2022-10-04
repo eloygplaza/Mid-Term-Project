@@ -1,20 +1,20 @@
 /* Extra large devices (large desktops, 1280px and up) */
 @media (max-width: 1280px) {
     /* HEADER */
-    .navbar-main {
+    /* .navbar-main {
         margin-top: 30px;
-    }
+    } */
     /* GENERAL */
-    .container-main {
+    /* .container-main, .section.testimonial {
         margin-right: 0;
         margin-left: 0;
     }
     .container-navbar {
         justify-content: space-around;
-    }
+    } */
     /* HERO */
-    .hero {
-        padding: 0px 0px;
+    /* .hero {
+        padding: 50px 0px;
     }
     .hero-content {
         max-width: 485px;
@@ -24,19 +24,45 @@
     }
     .hero-card-2 {
         right: -21%;
-    }
+    } */
     /* PROJECTS */
-    .projects {
+    /* .projects {
         margin-top: 0px;
     }
     .projects-item {
         width: 310px;
+    } */
+    /* TESTIMONIALS */
+    /* .section.testimonial {
+        margin-top: 100px;
     }
+    .testimonial {
+        max-width: 1117px;
+    } */
+    /* SERVICES */
+    /* .services {
+        margin-top: 100px;
+    }
+    .services-container {
+        padding-left: 20px;
+    } */
 }
 
 /* Large devices (desktops, 1024px and up) */
 @media (max-width: 1024px) {
-
+    .container-main {
+        max-width: 950px;
+    }
+    .hero-card-main {
+        max-width: 500px;
+    }
+    .hero-card-1 {
+        left: -9%;
+    }
+    .hero-card-2 {
+        right: -17%;
+        width: 265px;
+    }
 }
 
 /* Medium devices (tablets, 912px and up) Surface Pro 7 */
