@@ -77,14 +77,28 @@
         margin-top: 100px;
     }
 }
-/* Small devices (landscape phones, 768px and up) iPad Air */
-@media (max-width: 820px) {
-
-}
-
 /* Small devices (landscape phones, 768px and up) iPad Mini */
 @media (max-width: 768px) {
-
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .projects-title {
+        margin: 12px 30px 20px;
+    }
+    .projects-item {
+        margin-bottom: 10px;
+        width: 340px;
+    }
+    .projects-text {
+        padding: 16px;
+    }
+    .projects-card-image {
+        height: 280px;
+    }
 }
 
 /* Small devices (landscape phones, 412px and up) Galaxy Ultra S20 */
