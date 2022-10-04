@@ -135,6 +135,14 @@
     .projects-card-image {
         height: 280px;
     }
+    /* TESTIMONIALS */
+    .emoji {
+        width: 100px;
+        height: 100px;
+    }
+    .emoji.top-left, .emoji.top-right {
+        margin-top: 0;
+    }
 }
 
 /* Small devices (landscape phones, 412px and up) Galaxy Ultra S20 */
