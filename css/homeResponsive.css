@@ -47,7 +47,35 @@
 
 /* Medium devices (tablets, 912px and up) Surface Pro 7 */
 @media (max-width: 912px) {
-
+    /* GENERALS */
+    .container-main {
+        max-width: 850px;
+    }
+    /* PROJECTS */
+    .projects {
+        margin-top: 100px;
+        padding: 0px 0px;
+    }
+    .projects-item {
+        width: 256px;
+    }
+    .projects-card-image {
+        height: 200px;
+    }
+    /* TESTIMONIAL */
+    .section.testimonial {
+        margin-top: 50px;
+    }
+    .emoji.top-left {
+        margin-left: 0%;
+    }
+    .emoji.top-right {
+        margin-right: 0%;
+    }
+    /* EMAIL */
+    .email-section {
+        margin-top: 100px;
+    }
 }
 /* Small devices (landscape phones, 768px and up) iPad Air */
 @media (max-width: 820px) {
