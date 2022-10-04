@@ -79,6 +79,42 @@
 }
 /* Small devices (landscape phones, 768px and up) iPad Mini */
 @media (max-width: 768px) {
+    /* GENERALS */
+    .container-main {
+        max-width: 700px;
+    }
+    .h1 {
+        font-size: 30px;
+    }
+    /* NAVBAR */
+    .navbar-main {
+        margin-top: 30px;
+    }
+    /* HERO */
+    .hero-card-main {
+        max-width: 400px;
+    }
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-primary {
+        margin-right: 20px;
+    }
+    .hero-card-1 {
+        width: 246px;
+    }
+    .hero-card-2 {
+        right: -7%;
+        width: 240px;
+        bottom: -36%;
+    }
+    /* COMPANIES */
+    .logos {
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+    /* PROJECTS */
     .projects-list {
         display: flex;
         flex-direction: column;
