@@ -1,6 +1,37 @@
 /* Extra large devices (large desktops, 1280px and up) */
 @media (max-width: 1280px) {
-
+    /* HEADER */
+    .navbar-main {
+        margin-top: 30px;
+    }
+    /* GENERAL */
+    .container-main {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .container-navbar {
+        justify-content: space-around;
+    }
+    /* HERO */
+    .hero {
+        padding: 0px 0px;
+    }
+    .hero-content {
+        max-width: 485px;
+    }
+    .hero-card-main {
+        max-width: 500px;
+    }
+    .hero-card-2 {
+        right: -21%;
+    }
+    /* PROJECTS */
+    .projects {
+        margin-top: 0px;
+    }
+    .projects-item {
+        width: 310px;
+    }
 }
 
 /* Large devices (desktops, 1024px and up) */
