@@ -75,6 +75,7 @@ submitBtn.addEventListener("click", (e) => {
   }
 });
 
+/* burguer menu for mobile */
 let mobileMenu = document.querySelector(".fa-bars");
 let navMobile = document.querySelector(".nav-mobile");
 mobileMenu.addEventListener("click", (e) => {
