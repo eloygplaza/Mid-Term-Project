@@ -2,6 +2,9 @@
     "projects": [
       { "id": 1, "title": "Simplify", "description": "UI Design & App Development"},
       { "id": 2, "title": "Dashcoin", "description": "Web Development"},
-      { "id": 3, "title": "Vectorify", "description": "User Experience Design"}
+      { "id": 3, "title": "Vectorify", "description": "User Experience Design"},
+      { "id": 4, "title": "Orbit", "description": "UI Design"},
+      { "id": 5, "title": "Purify", "description": "UI/UX Design"},
+      { "id": 6, "title": "CryptoPie", "description": "App Development"}
     ]
 }
