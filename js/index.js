@@ -9,36 +9,48 @@ async function fetchProjects() {
 
   projects = await res.json();
 
-  // iteramos por todos los projects
+  // we only want to print 3 projects in HomePage
+  let i = 0;
   projects.forEach((element) => {
+    if (i < 3) i++;
+    else return;
+
     let titleCard = element.title; // titulo card
     let pathImageCard = `./project-assets/projects-section/${element.id}.jpg`; // url de la imagen
     let projectDescription = element.description; // descripcion card
 
-    // creamos lo elementos a insertar en el html
+    // creamos los elementos a insertar en el html, son 3 items
     const divItem = document.createElement("div");
     divItem.classList.add("projects-item");
+    // div card
     const divCard = document.createElement("div");
     divCard.classList.add("projects-card");
+    // div img
     const divCardImage = document.createElement("div");
     divCardImage.classList.add("projects-image");
+    // img
     const imgCard = document.createElement("img");
     imgCard.src = pathImageCard;
     imgCard.classList.add("projects-card-image");
+    // div content
     const divCardContent = document.createElement("div");
     divCardContent.classList.add("projects-content");
+    // text
     const divCardText = document.createElement("div");
     divCardText.classList.add("projects-text");
+    // title
     const divCardTitle = document.createElement("div");
     divCardTitle.classList.add("projects-title");
     divCardTitle.innerText = titleCard;
+    // description
     const divCardDescription = document.createElement("div");
     divCardDescription.classList.add("projects-title");
     divCardDescription.classList.add("projects-description");
     divCardDescription.innerText = projectDescription;
+    // link
     const linkProject = document.createElement("a");
     linkProject.classList.add("projects-link");
-    linkProject.href = "#";
+    linkProject.href = `project.html?id=${element.id}`;
     linkProject.innerText = "Learn More";
 
     // anexamos e insertamos en html
@@ -51,11 +63,6 @@ async function fetchProjects() {
     divCard.appendChild(divCardContent);
     divItem.appendChild(divCard);
     container.appendChild(divItem);
-
-    // document.querySelector(".projects-title").innerText = titleCard;
-    // document.querySelector(".projects-description").innerText =
-    //   projectDescription;
-    // document.querySelector(".projects-link").innerText = "Learn More";
   });
 }
 
@@ -79,11 +86,11 @@ submitBtn.addEventListener("click", (e) => {
 let mobileMenu = document.querySelector(".fa-bars");
 let navMobile = document.querySelector(".nav-mobile");
 mobileMenu.addEventListener("click", (e) => {
-  if (navMobile.style.top == "-200px") {
+  if (navMobile.style.top == "-300px") {
     navMobile.style.top = "0px";
     mobileMenu.classList.add("fa-rotate-90");
   } else {
-    navMobile.style.top = "-200px";
+    navMobile.style.top = "-300px";
     mobileMenu.classList.remove("fa-rotate-90");
   }
 });
