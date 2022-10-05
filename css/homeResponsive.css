@@ -147,6 +147,23 @@
 
 /* Small devices (landscape phones, 412px and up) Galaxy Ultra S20 */
 @media (max-width: 412px) {
+    /* NAVBAR */
+    .burguer-menu {
+        display: block;
+        top: 44px;
+    }
+    .navbar-main nav, a[href="/contact-us"] {
+        display: none;
+    }
+    .navbar-logo {
+        width: 120px;
+        height: 60px;
+    }
+    .container-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     /* HERO */
     .hero-container {
         display: flex;
@@ -155,9 +172,20 @@
     .hero-card-main {
         max-width: 390px;
     }
+    .hero-image {
+        margin-top: 20px;
+    }
+    .hero-card-2 {
+        right: 0%;
+        width: 208px;
+        bottom: -34%;
+    }
     /* COMPANIES */
     .logos {
-        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    }
+    .projects-container > h2, .services-container > h1 {
+        text-align: center;
     }
     /* TESTIMONIAL */
     .emoji.bottom-left {
@@ -189,5 +217,8 @@
     .footer-main {
         display: flex;
         flex-direction: column;
+    }
+    .footer-content-address {
+        margin-bottom: 20px;
     }
 }
