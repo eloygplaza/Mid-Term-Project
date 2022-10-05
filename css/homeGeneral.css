@@ -133,7 +133,8 @@ html, body {
     border-color: transparent;
     background-color: transparent;
     font-size: 1.5em;
-    right: 0;
+    right: 22px;
+    z-index: 2;
 }
 .nav-mobile {
     display: flex;
@@ -142,6 +143,7 @@ html, body {
     width: 100%;
     background-color: white;
     transition: 1s all;
+    z-index: 1;
 }
 .fa-bars {
     transition: 1s all;
