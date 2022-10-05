@@ -2,6 +2,11 @@
 .services {
     margin-top: 200px;
 }
+.service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .services-grid {
     display: grid;
     margin-top: 70px;
@@ -42,12 +47,4 @@
 }
 .icon-3 {
     background-image: url("../project-assets/services-section/icons/3.svg");
-}
-.service-content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }

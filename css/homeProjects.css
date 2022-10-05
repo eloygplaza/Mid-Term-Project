@@ -57,3 +57,7 @@
     font-weight: 500;
     text-decoration: none;
 }
+.projects-item:hover, .service-card:hover {
+    filter: drop-shadow(10px 10px 2px #4444dd8c);
+    transition: all 0.1s;
+}

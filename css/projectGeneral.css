@@ -1,0 +1,9 @@
+/* ESTILOS GENERALES */
+.project-heading {
+    font-size: 60px;
+    color: var(--dark-grey);
+}
+.intro-metadata {
+    display: flex;
+    justify-content: space-between;
+}

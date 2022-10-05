@@ -83,6 +83,10 @@ html, body {
     background-color: #072ac8;
     font-size: 17px;
 }
+.primary-button:hover {
+    filter: drop-shadow(10px 10px 2px #4444dd8c);
+    transition: all 0.1s;
+}
 .g-button {
     display: inline-block;
     color: white;
