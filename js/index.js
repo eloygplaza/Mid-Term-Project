@@ -68,9 +68,21 @@ submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   let email = document.querySelector("#email-input").value;
   if (email.length > 0) {
-    // Bonus - we could add some fieworks when we reicive the correct email address :D
+    // Bonus - We could add some fireworks when we receive the correct email address :D
     console.log(email);
   } else {
     console.log("Empty");
+  }
+});
+
+let mobileMenu = document.querySelector(".fa-bars");
+let navMobile = document.querySelector(".nav-mobile");
+mobileMenu.addEventListener("click", (e) => {
+  if (navMobile.style.top == "-200px") {
+    navMobile.style.top = "0px";
+    mobileMenu.classList.add("fa-rotate-90");
+  } else {
+    navMobile.style.top = "-200px";
+    mobileMenu.classList.remove("fa-rotate-90");
   }
 });
