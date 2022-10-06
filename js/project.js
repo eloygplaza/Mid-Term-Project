@@ -10,11 +10,12 @@ async function fetchProject() {
   project = await res.json();
 
   document.querySelector(".project-heading").innerHTML = project[id - 1].title;
-  document.querySelector(
-    ".project-image"
-  ).innerHTML = `<img src='./project-assets/projects-section/${id}.jpg'></img>`; // url de la imagen
+  document.querySelector(".intro").innerHTML = project[id - 1].description;
   document.querySelector(".project-description").innerHTML =
     project[id - 1].text;
+  document.querySelector(
+    ".project-image"
+  ).style.backgroundImage = `url('./project-assets/projects-section/${id}.jpg')`;
 }
 
 fetchProject();
@@ -112,14 +113,14 @@ btnDark.addEventListener("click", (e) => {
   let checkDark = document.getElementsByClassName("fa-moon").length;
   if (checkDark > 0) {
     btnDark.innerHTML =
-      '<i class="fa-regular fa-lightbulb fa-2xl"></i><i class="fa-solid fa-toggle-on fa-2xl"></i>';
+      '<i class="fa-regular fa-lightbulb fa-2xl" style="color: #FFC600"></i><i class="fa-solid fa-toggle-on fa-2xl" style="color: #FFC600"></i>';
     document.querySelector("body").style.backgroundColor = "#10121a";
     document.querySelector("html").style.backgroundColor = "#10121a";
     document.querySelector(".project-heading").style.color = "#f2f4fc";
     document.querySelector(".other-projects").style.color = "#f2f4fc";
   } else {
     btnDark.innerHTML =
-      '<i class="fa-solid fa-moon fa-2xl"></i><i class="fa-solid fa-toggle-off fa-2xl"></i>';
+      '<i class="fa-solid fa-moon fa-2xl" ></i><i class="fa-solid fa-toggle-off fa-2xl"></i>';
     document.querySelector("body").style.backgroundColor = "#F2F4FC";
     document.querySelector("html").style.backgroundColor = "#F2F4FC";
     document.querySelector(".project-heading").style.color = "#292E47";
