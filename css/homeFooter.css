@@ -43,3 +43,9 @@
     text-decoration: none;
     color: var(--dark-blue);
 }
+.footer-darkmode {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
