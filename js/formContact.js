@@ -24,3 +24,23 @@ mobileMenu.addEventListener("click", (e) => {
     mobileMenu.classList.remove("fa-rotate-90");
   }
 });
+
+// dark mode toggle
+let btnDark = document.querySelector(".footer-darkmode");
+btnDark.addEventListener("click", (e) => {
+  // we check if dark mode is active
+  let checkDark = document.getElementsByClassName("fa-moon").length;
+  if (checkDark > 0) {
+    btnDark.innerHTML =
+      '<i class="fa-regular fa-lightbulb fa-2xl"></i><i class="fa-solid fa-toggle-on fa-2xl"></i>';
+    document.querySelector("body").style.backgroundColor = "#10121a";
+    document.querySelector("html").style.backgroundColor = "#10121a";
+    document.querySelector(".heading-contact").style.color = "#f2f4fc";
+  } else {
+    btnDark.innerHTML =
+      '<i class="fa-solid fa-moon fa-2xl"></i><i class="fa-solid fa-toggle-off fa-2xl"></i>';
+    document.querySelector("body").style.backgroundColor = "#F2F4FC";
+    document.querySelector("html").style.backgroundColor = "#F2F4FC";
+    document.querySelector(".heading-contact").style.color = "#292E47";
+  }
+});

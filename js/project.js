@@ -1,3 +1,4 @@
+// we add all the data about the project we selected
 async function fetchProject() {
   let project;
   let id = window.location.href.split("=").pop();
@@ -14,14 +15,13 @@ async function fetchProject() {
   ).innerHTML = `<img src='./project-assets/projects-section/${id}.jpg'></img>`; // url de la imagen
   document.querySelector(".project-description").innerHTML =
     project[id - 1].text;
-  console.log(project[id - 1].text);
 }
 
 fetchProject();
 
 // sync function to insert the projects inside the Projects page
 // we check first which project we are currently showing to not duplicate it
-async function fetchProjects() {
+async function fetchProjectsCheck() {
   let projects;
   let container = document.querySelector(".projects-list");
   let id = window.location.href.split("=").pop();
@@ -90,20 +90,7 @@ async function fetchProjects() {
 }
 
 // we execute the function
-fetchProjects();
-
-// we control when the buton submit is clicked by an eventListener and we show the value through console.log()
-let submitBtn = document.querySelector("#submit-btn");
-submitBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  let email = document.querySelector("#email-input").value;
-  if (email.length > 0) {
-    // Bonus - We could add some fireworks when we receive the correct email address :D
-    console.log(email);
-  } else {
-    console.log("Empty");
-  }
-});
+fetchProjectsCheck();
 
 /* burguer menu for mobile */
 let mobileMenu = document.querySelector(".fa-bars");
@@ -115,5 +102,27 @@ mobileMenu.addEventListener("click", (e) => {
   } else {
     navMobile.style.top = "-300px";
     mobileMenu.classList.remove("fa-rotate-90");
+  }
+});
+
+// dark mode toggle
+let btnDark = document.querySelector(".footer-darkmode");
+btnDark.addEventListener("click", (e) => {
+  // we check if dark mode is active
+  let checkDark = document.getElementsByClassName("fa-moon").length;
+  if (checkDark > 0) {
+    btnDark.innerHTML =
+      '<i class="fa-regular fa-lightbulb fa-2xl"></i><i class="fa-solid fa-toggle-on fa-2xl"></i>';
+    document.querySelector("body").style.backgroundColor = "#10121a";
+    document.querySelector("html").style.backgroundColor = "#10121a";
+    document.querySelector(".project-heading").style.color = "#f2f4fc";
+    document.querySelector(".other-projects").style.color = "#f2f4fc";
+  } else {
+    btnDark.innerHTML =
+      '<i class="fa-solid fa-moon fa-2xl"></i><i class="fa-solid fa-toggle-off fa-2xl"></i>';
+    document.querySelector("body").style.backgroundColor = "#F2F4FC";
+    document.querySelector("html").style.backgroundColor = "#F2F4FC";
+    document.querySelector(".project-heading").style.color = "#292E47";
+    document.querySelector(".other-projects").style.color = "#292E47";
   }
 });

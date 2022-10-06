@@ -67,7 +67,8 @@ async function fetchProjects() {
 }
 
 // we execute the function
-fetchProjects();
+let checkProjects = document.getElementsByClassName("hero-heading").length;
+checkProjects > 0 ? fetchProjects() : "";
 
 // we control when the buton submit is clicked by an eventListener and we show the value through console.log()
 let submitBtn = document.querySelector("#submit-btn");
@@ -92,5 +93,33 @@ mobileMenu.addEventListener("click", (e) => {
   } else {
     navMobile.style.top = "-300px";
     mobileMenu.classList.remove("fa-rotate-90");
+  }
+});
+
+// dark mode toggle
+let btnDark = document.querySelector(".footer-darkmode");
+btnDark.addEventListener("click", (e) => {
+  // we check if dark mode is active
+  let checkDark = document.getElementsByClassName("fa-moon").length;
+  if (checkDark > 0) {
+    btnDark.innerHTML =
+      '<i class="fa-regular fa-lightbulb fa-2xl"></i><i class="fa-solid fa-toggle-on fa-2xl"></i>';
+    document.querySelector("body").style.backgroundColor = "#10121a";
+    document.querySelector("html").style.backgroundColor = "#10121a";
+    document.querySelector(".hero-heading").style.color = "#f2f4fc";
+    document.querySelector(".projects-heading").style.color = "#f2f4fc";
+    document.querySelector(".project-heading").style.color = "#f2f4fc";
+    document.querySelector(".other-projects").style.color = "#f2f4fc";
+    document.querySelector(".services-heading").style.color = "#f2f4fc";
+  } else {
+    btnDark.innerHTML =
+      '<i class="fa-solid fa-moon fa-2xl"></i><i class="fa-solid fa-toggle-off fa-2xl"></i>';
+    document.querySelector("body").style.backgroundColor = "#F2F4FC";
+    document.querySelector("html").style.backgroundColor = "#F2F4FC";
+    document.querySelector(".hero-heading").style.color = "#292E47";
+    document.querySelector(".projects-heading").style.color = "#292E47";
+    document.querySelector(".project-heading").style.color = "#292E47";
+    document.querySelector(".other-projects").style.color = "#292E47";
+    document.querySelector(".services-heading").style.color = "#292E47";
   }
 });
