@@ -84,7 +84,7 @@
         display: block;
         top: 44px;
     }
-    .navbar-main nav, a[href="formcontact.html"], .container-navbar nav + a {
+    .navbar-main nav, .contact-btn {
         display: none;
     }
     /* GENERALS */
@@ -235,5 +235,8 @@
     }
     .footer-content-address {
         margin-bottom: 20px;
+    }
+    .footer-darkmode {
+        padding: 10px 0 40px 0;
     }
 }

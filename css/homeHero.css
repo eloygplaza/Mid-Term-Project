@@ -46,9 +46,25 @@
     bottom: auto;
     max-width: 375px;
     width: 294px;
+    z-index: 1;
+    animation: around1 4s infinite;
 }
+@keyframes around1 {
+    0%   {
+    }
+    25%  {
+    }
+    50%  {
+        top: 5%;
+    }
+    100% {
+        top: 0%;
+    }
+  }
 .hero-card-main {
     max-width: 560px;
+    position: relative;
+    z-index: 0;
 }
 .hero-card-2 {
     position: absolute;
@@ -58,4 +74,10 @@
     bottom: -22%;
     max-width: 375px;
     width: 290px;
+    z-index: 1;
+    animation: around2 6s infinite;
+}
+@keyframes around2 {
+    from {transform:rotate3d(0, 1, 0, 0deg);}
+    to {transform:rotate3d(0, 1, 0, 360deg);}
 }
