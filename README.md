@@ -1,0 +1,2 @@
+# Mid-Term-Project
+Circle Agency website clone (Home, Project, and Contact pages)
